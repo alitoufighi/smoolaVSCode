@@ -1,0 +1,25 @@
+{
+    "name": "smoola",
+    "displayName": "Smoola",
+    "description": "Smoola is a tiny programming language, designed based on Java at University of Tehran Programming Languages and Compilers course",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "smoola",
+            "aliases": ["Smoola", "smoola"],
+            "extensions": [".sml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "smoola",
+            "scopeName": "program",
+            "path": "./syntaxes/smoola.tmLanguage.json"
+        }]
+    }
+}
